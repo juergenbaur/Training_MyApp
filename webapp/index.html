@@ -17,7 +17,10 @@
 
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				alert("SAPUI5 is ready");
+				var oImage = new sap.m.Image({
+					src: "https://sapui5.netweaver.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg"
+				}).placeAt("content");
+				oImage.setHeight("100px");
 			});
 		</script>
 	</head>
