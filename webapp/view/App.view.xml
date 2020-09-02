@@ -5,5 +5,10 @@
 			<Image src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-6120-large.jpg" height="600px"/>
 		</pages>
 	</Carousel>
-	<Button text="Say Hello" press="onShowHello"></Button>
+	<Button text="{i18n>showHelloButtonText}" press="onShowHello"></Button>
+		<Input
+		value="{helloPanel>/recipient/name}"
+		description="Hello {helloPanel>/recipient/name}"
+		valueLiveUpdate="true"
+		width="60%"/>
 </mvc:View>
