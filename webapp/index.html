@@ -11,16 +11,20 @@
 			data-sap-ui-theme="sap_bluecrystal"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-preload="async">
+			data-sap-ui-preload="async"
+		    data-sap-ui-resourceroots='{
+			"opensap.myapp": "./"
+		}'>
+		//Namespace festlegen mit data-sap-ui-resourceroots
 		</script>
 
 
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				var oImage = new sap.m.Image({
-					src: "https://sapui5.netweaver.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg"
-				}).placeAt("content");
-				oImage.setHeight("100px");
+		    //View erzeugen
+			sap.ui.xmlview({
+				viewName: "opensap.myapp.view.App"
+			}).placeAt("content");
 			});
 		</script>
 	</head>
