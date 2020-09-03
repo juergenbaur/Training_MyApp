@@ -1,5 +1,4 @@
-<mvc:View displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	controllerName="opensap.myapp.controller.App">
+<mvc:View displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="opensap.myapp.controller.App">
 	<Carousel>
 		<pages>
 			<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/SAP-Logo.svg/743px-SAP-Logo.svg.png" height="600px"/>
@@ -8,7 +7,6 @@
 				height="600px"/>
 		</pages>
 	</Carousel>
-		<Button
-		text="Say Hello!"
-		press="onShowHello"/>
+	<Button text="{i18n>showHelloButtonText}" press="onShowHello"/>
+	<Input value="{helloPanel>/recipient/name}" description="Hello {helloPanel>/recipient/name}" valueLiveUpdate="true" width="60%"/>
 </mvc:View>
