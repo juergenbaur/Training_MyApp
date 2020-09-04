@@ -53,14 +53,8 @@
 									<List headerText="{i18n>productListTitle}" items="{/ProductSet}">
 										<items>
 											<ObjectListItem title="{Name}" number="{Price}" intro="{ProductID}">
-																								<firstStatus>
-													<ObjectStatus text="{
-														parts: [
-															{path: 'WeightUnit'},
-															{path: 'WeightMeasure'}
-														],
-														formatter : '.formatter.delivery'
-													}"/>
+												<firstStatus>
+													<ObjectStatus text="{ parts: [ {path: 'WeightUnit'},{path: 'WeightMeasure'} ], formatter : '.formatter.delivery' }"/>
 												</firstStatus>
 											</ObjectListItem>
 										</items>
