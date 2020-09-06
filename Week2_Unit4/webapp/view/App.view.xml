@@ -53,8 +53,7 @@
 							</IconTabFilter>
 							<IconTabFilter text="{i18n>dataBindingFilter}" key="db">
 								<content>
-									<List id="productsList" items="{ path : '/ProductSet', sorter : { path : 'Category', group : true } }" growing="true" growingThreshold="5"
-										growingScrollToLoad="false">
+									<List id="productsList" items="{ path : '/ProductSet', sorter : { path : 'Category', group : true } }">
 										<headerToolbar>
 											<Toolbar>
 												<Title text="{i18n>productListTitle}"/>
