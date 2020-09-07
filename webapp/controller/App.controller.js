@@ -21,6 +21,7 @@ sap.ui.define([
 			MessageToast.show(sMsg);
 
 		},
+
 		onItemSelected: function (oEvent) {
 			var oSelectedItem = oEvent.getSource();
 			var oContext = oSelectedItem.getBindingContext();
